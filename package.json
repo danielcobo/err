@@ -30,7 +30,7 @@
  },
  "homepage": "https://github.com/danielcobo/catcher#readme",
  "devDependencies": {
-  "@danielcobo/docs": "^1.0.9",
+  "@danielcobo/docs": "^1.0.10",
   "@stryker-mutator/core": "^5.4.1",
   "@stryker-mutator/jest-runner": "^5.4.1",
   "jest": "^27.3.1"

@@ -73,6 +73,16 @@ For details see documentation below.
 
 ## 📘 Documentation
 
+### @danielcobo/err()
+
+Set error message
+
+| Name | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| description | `string` |  | Error description |
+
+<sub>**Source:** [index.js:26](https://github.com/danielcobo/err/blob/master/index.js?plain=1#L26)</sub>
+
 ## 🆘 Troubleshooting
 
 If you run into trouble or have questions just [submit an issue](https://github.com/danielcobo/err/issues).

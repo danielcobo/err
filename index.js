@@ -25,6 +25,7 @@ const handleError = function handleError(description, err) {
 
 /**
  * Set error message
+ * @public
  * @param {string} description - error description
  */
 module.exports = function err(description) {

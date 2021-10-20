@@ -29,17 +29,37 @@ To use this package you will need:
 
 ### Install
 
+#### NodeJS
+
+Install using the terminal:
+
 ```cli
 npm install @danielcobo/err
 ```
 
-<sub>**Note:** In case you're wondering, **@danielcobo/** is just a [namespace scope](https://docs.npmjs.com/about-scopes/) - an NPM feature. Scopes make it easier to name modules and improve [security](https://github.blog/2021-02-12-avoiding-npm-substitution-attacks/).</sub>
-
-### Require the module
+Require the module:
 
 ```js
 const err = require('@danielcobo/err');
 ```
+
+<sub>**Note:** In case you're wondering, **@danielcobo/** is just a [namespace scope](https://docs.npmjs.com/about-scopes/) - an NPM feature. Scopes make it easier to name modules and improve [security](https://github.blog/2021-02-12-avoiding-npm-substitution-attacks/).</sub>
+
+#### Browser
+
+Declare it as a global variable named err by including this script before any script you want to use it in:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/@danielcobo/err@1/dist/iife/typeof.min.js"></script>
+```
+
+Or import it as an [ECMAScript module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import):
+
+```js
+import * as err from 'https://cdn.jsdelivr.net/npm/@danielcobo/err@1/dist/esm/typeof.min.js';
+```
+
+Also, feel free to download the file if you prefer not to use [jsdelivr](https://www.jsdelivr.com). In that case just replace the url with the relative file path.
 
 ### Example use
 
@@ -55,7 +75,7 @@ For details see documentation below.
 
 ## 🆘 Troubleshooting
 
-Only works in NodeJS since it will also exit process.
+If you run into trouble or have questions just [submit an issue](https://github.com/danielcobo/err/issues).
 
 ## 🤝 Contributing
 
@@ -89,7 +109,7 @@ You can contribute by:
 - do test
 
 **Contribution licence:**
-All contributions are considered to be under same [license](#license) as this repository.
+All contributions are considered to be under same [license](#-license) as this repository.
 
 ## 🧪 Testing
 

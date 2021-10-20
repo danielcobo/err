@@ -1,3 +1,15 @@
+//Enable use in browser
+if (typeof window !== 'undefined') {
+  window.require = function (func) {
+    if (func === 'chalk') {
+      return function (str) {
+        return str;
+      };
+    }
+    return { exit: function () {} };
+  };
+}
+
 const chalk = require('chalk');
 const process = require('process');
 

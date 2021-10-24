@@ -2,7 +2,7 @@
  "name": "@danielcobo/err",
  "version": "1.0.6",
  "description": "Error handler for failed promises",
- "main": ".src/index.js",
+ "main": "src/index.js",
  "scripts": {
   "test": "jest --collectCoverage --runInBand",
   "testing": "jest --watch --collectCoverage --runInBand",

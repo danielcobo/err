@@ -1,6 +1,6 @@
 {
  "name": "@danielcobo/err",
- "version": "1.0.2",
+ "version": "1.0.3",
  "description": "Error handler for failed promises",
  "main": "index.js",
  "scripts": {

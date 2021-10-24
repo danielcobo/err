@@ -1,3 +1,4 @@
+import commonjs from '@rollup/plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 
 const newOutput = function newOutput(format) {
@@ -10,7 +11,6 @@ const newOutput = function newOutput(format) {
       preferConst: true,
     },
     plugins: [
-      nodeResolve(),
       commonjs({
         sourceMap: false,
       }),

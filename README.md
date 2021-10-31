@@ -17,13 +17,11 @@ Error handler for failed promises
 
 - [x] More readable than try/catch
 - [x] Preserves stack call for debugging
-- [x] Exits process
+- [x] Exits process (in NodeJS)
 
 ## 🎒 Requierments
 
-To use this package you will need:
-
-- [NodeJS](https://nodejs.org/en/)
+No requierments, just works.
 
 ## 🚀 Quickstart
 
@@ -81,7 +79,7 @@ Set error message
 | ---- | ---- | ------- | ----------- |
 | description | `string` |  | Error description |
 
-<sub>**Source:** [index.js:26](https://github.com/danielcobo/err/blob/master/index.js?plain=1#L26)</sub>
+<sub>**Source:** [src/index.js:26](https://github.com/danielcobo/err/blob/master/src/index.js?plain=1#L26)</sub>
 
 ## 🆘 Troubleshooting
 

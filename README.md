@@ -48,13 +48,13 @@ const err = require('@danielcobo/err');
 Declare it as a global variable named err by including this script before any script you want to use it in:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@danielcobo/err@1/dist/iife/typeof.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@danielcobo/err@1/dist/iife/err.min.js"></script>
 ```
 
 Or import it as an [ECMAScript module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import):
 
 ```js
-import * as err from 'https://cdn.jsdelivr.net/npm/@danielcobo/err@1/dist/esm/typeof.min.js';
+import * as err from 'https://cdn.jsdelivr.net/npm/@danielcobo/err@1/dist/esm/err.min.js';
 ```
 
 Also, feel free to download the file if you prefer not to use [jsdelivr](https://www.jsdelivr.com). In that case just replace the url with the relative file path.
@@ -79,7 +79,7 @@ Set error message
 | ---- | ---- | ------- | ----------- |
 | description | `string` |  | Error description |
 
-<sub>**Source:** [src/index.js:26](https://github.com/danielcobo/err/blob/master/src/index.js?plain=1#L26)</sub>
+<sub>**Source:** [src/index.js:18](https://github.com/danielcobo/err/blob/master/src/index.js?plain=1#L18)</sub>
 
 ## 🆘 Troubleshooting
 

@@ -1,17 +1,9 @@
-//Enable use in browser
+//Enable use in browser - mock process global
 if (typeof window !== 'undefined') {
   window.require = function (func) {
-    if (func === 'chalk') {
-      return function (str) {
-        return str;
-      };
-    }
     return { exit: function () {} };
   };
 }
-
-const chalk = require('chalk');
-const process = require('process');
 
 /**
  * Log error and exit
@@ -19,7 +11,7 @@ const process = require('process');
  * @param {*} description
  */
 const handleError = function handleError(description, err) {
-  console.log(chalk.red(`${description}\n${err.stack}`));
+  console.log(`${description}\n${err.stack}`);
   process.exit(1);
 };
 

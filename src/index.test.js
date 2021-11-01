@@ -1,6 +1,4 @@
 const err = require('./index.js');
-const process = require('process');
-const chalk = require('chalk');
 
 test('Test handleError.js', function () {
   //Borrowed from: https://stackoverflow.com/a/50387948
@@ -15,7 +13,7 @@ test('Test handleError.js', function () {
     errHandler(new Error(mockErr));
   }).toThrow('process.exit() was called.');
   const log = spy.mock.calls[0][0].split('\n');
-  expect(log[0]).toStrictEqual(chalk.red(errMsg));
-  expect(log[1]).toStrictEqual(chalk.red('Error: ' + mockErr));
+  expect(log[0]).toStrictEqual(errMsg);
+  expect(log[1]).toStrictEqual('Error: ' + mockErr);
   expect(process.exit).toHaveBeenCalledWith(1);
 });
